@@ -1,0 +1,244 @@
+html,body{
+    background-color: #fff;
+}
+body{
+    padding-bottom: 0.5rem;
+}
+.publish-wrap{
+    padding:0 0.24rem;
+}
+.publish-wrap .publish-title{
+    height:1rem;
+    line-height:1rem;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.publish-wrap .publish-title input[type=text]{
+    width:100%;
+    height:100%;
+}
+.dim-box{
+    line-height:1rem;
+    height:1rem;
+    text-align: center;
+    padding:0.2rem 0;
+}
+.dim-box a{
+    display: inline-block;
+    width:80%;
+    height:0.8rem;
+    line-height:0.8rem;
+    margin:0.2rem auto;
+    background-color: #34ad62;
+    color: #fff;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+/**/
+.publish-article-content{
+    height:6.8rem;
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+}
+.article-content{
+    height:5.5rem;
+    overflow-y: scroll;
+    padding-top:0.3rem;
+}
+.article-content img{
+    display: block;
+    margin:0 auto;
+}
+.publish-article-content .footer-btn{
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:2rem;
+    height:1rem;
+    line-height:1rem;
+    text-align: center;
+}
+.publish-article-content .footer-btn #imageUpload{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+}
+.upload{
+    position: relative;
+    display: block;
+    padding-left:0.3rem;
+}
+.upload .upload-img{
+    position: absolute;
+    left:0;
+    top:50%;
+    margin-top:-0.215rem;
+    width:0.43rem;
+    height:0.43rem;
+    background: url("../images/upload-icon.png") no-repeat;
+    -webkit-background-size:contain;
+    background-size:contain;
+}
+.publish-title{
+    position: relative;
+}
+.publish-title .upload-fm{
+    position: relative;
+    height: 1rem;
+    line-height:rem;
+    width:2rem;
+    text-align: center;
+    background-color: #34ad62;
+    color: #fff !important;
+    font-size: 16px;
+    overflow: hidden;
+}
+.publish-title .publish-inp{
+    color: #999999;
+}
+.publish-title .upload-fm input[type=file]{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: Alpha(opacity=0);
+}
+
+/*模糊处理选择*/
+.dim-choose{
+    position: absolute;
+    left: -100%;;
+    bottom:0;
+    height:100%;
+    width:0.8rem;
+    background: rgba(0,0,0,.5);
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s;
+
+}
+
+.dim-choose input[type=checkbox]{
+    width:0.3rem;
+    height:0.3rem;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -0.15rem;
+    margin-top:-0.15rem;
+}
+.dim-choose input[type=text]{
+    width:3rem;
+    height:0.6rem;
+    background-color: #fff;
+    margin:0 0.1rem;
+    position: absolute;
+    left:0.6rem;
+    top:50%;
+    margin-top: -0.3rem;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,.1);
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    display: none;
+}
+.dim-choose.active{
+    left:0;
+}
+/*分类*/
+.publish-class h2{
+    line-height:0.6rem;
+    padding:0.2rem 0;
+}
+.publish-class select{
+    min-width:2.48rem;
+    height:0.6rem;
+    border:1px solid #dcdcdc;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    text-align: center;
+    padding-left:0.15rem;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, "microsoft yahei";
+    outline: none;
+    font-size:15px;
+}
+/*发布视频*/
+.publish-video-dec textarea{
+    width:100%;
+    height:1.8rem;
+    padding-top:0.35rem;
+    text-align: left;
+    resize: none;
+}
+.publish-video-line{
+    height:0.88rem;
+    line-height: 0.88rem;
+    background-color: #eeeeee;
+}
+.publish-video-line input{
+    width:100%;
+    padding-left:0.15rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*发布图集*/
+.publish-photo-box{
+    padding:0.5rem 0;
+}
+.publish-photo-box .publish-photo-upload{
+    width:90%;
+    height:2rem;
+    margin:0 auto;
+    background: url("../images/publish-photo-bg.png") center center no-repeat;
+    -webkit-background-size:contain;
+    background-size:contain;
+    position: relative;
+}
+.publish-photo-box .publish-photo-upload #myFile{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity:0;
+}
+.upload-list li{
+    padding:0.15rem 0;
+}
+.upload-list li .upload-box-wrap{
+    position: relative;
+}
+.del-box{
+    width:0.5rem;
+    height:0.5rem;
+    line-height:0.5rem;
+    text-align: center;
+    position: absolute;
+    right:0;
+    top:0;
+    font-weight: bold;
+}
+.upload-dec{
+    padding:0.1rem 0;
+    border-bottom:1px solid #dcdcdc;
+}
+.upload-dec textarea{
+    resize: none;
+    width:100%;
+    height:100%;
+}
+.upload-list li .uoload-pic{
+    text-align: center;
+}
+.upload-list li .uoload-pic img{
+    width:100%;
+}

@@ -1,0 +1,803 @@
+    .person-center-top {
+        height: 4.2rem;
+        width: 100%;
+        background: url("../images/center/center-bg.png") center center no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    .header-title {
+        height: 0.88rem;
+        line-height: 0.88rem;
+        text-align: center;
+        background: none;
+        padding: 0 0.88rem;
+        color: #fff;
+    }
+    
+    .header-bj {
+        width: 0.88rem;
+        height: 0.88rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .header-bj:before {
+        content: "";
+        width: 0.32rem;
+        height: 0.32rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -0.16rem;
+        margin-top: -0.16rem;
+        background: url("../images/center/bianji.png") no-repeat;
+        background-size: contain;
+        -webkit-background-size: contain;
+    }
+    
+    .cc_back {
+        left: 0;
+        top: 0;
+        width: 0.88rem;
+        height: 0.88rem;
+        position: absolute;
+    }
+    
+    .cc_back:before {
+        left: 50%;
+        top: 50%;
+        content: "";
+        width: 0.4rem;
+        height: 0.4rem;
+        position: absolute;
+        margin-top: -0.2rem;
+        margin-left: -0.2rem;
+        background: url("../images/center/back.png") no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+
+    .header-save i{
+        font-size: 18px;
+    }
+    .down-list{
+        position: absolute;
+        width: 2.5rem;
+        line-height: 1.05rem;
+        background-color: #fff;
+        top:0.88rem;
+        right:0;
+        -webkit-box-shadow: 0 0 15px rgba(0,0,0,.1);
+        -moz-box-shadow:0 0 15px rgba(0,0,0,.1);
+        box-shadow: 0 0 15px rgba(0,0,0,.1);
+        padding-left:0.4rem;
+        height: 0;
+        opacity:0;
+        overflow: hidden;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        -webkit-transition: all 0.5s ;
+        -moz-transition: all 0.5s ;
+        -ms-transition: all 0.5s ;
+        -o-transition: all 0.5s ;
+        transition: all 0.5s;
+        background-color: #fff;
+        z-index:99;
+    }
+    .down-list.active{
+        overflow: visible;
+        height:auto;
+        opacity: 1;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    }
+    .down-list:before{
+        content: '';
+        width: 0;
+        height:0;
+        border-width:0.2rem;
+        border-style: solid;
+        border-color: transparent transparent #fff transparent;
+        position: absolute;
+        top: -0.36rem;
+        right: 0.28rem;
+    }
+    .down-list a{
+        display: block;
+        font-size:16px;
+        text-align: left;
+    }
+    .down-list a i{
+        font-size:20px;
+        font-weight: bold;
+        margin:0 0.2rem 0 0;
+    }
+    /*个人信息*/
+    
+    .person-center-info {
+        padding: 0.32rem 0;
+        text-align: center;
+    }
+    
+    .person-center-info .person-center-info-head {
+        width: 1.3rem;
+        height: 1.3rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0.15rem auto;
+    }
+    
+    .person-center-info .person-center-info-head img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .person-center-info .person-center-info-name {
+        color: #fff;
+        font-size: 0.28rem;
+    }
+    /*tab*/
+    
+    .person-tab {
+        padding: 0 0.25rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+    }
+    
+    .person-tab a {
+        float: left;
+        width: 33.33%;
+        color: #fff;
+        text-align: center;
+        font-size: 0.3rem;
+    }
+    
+    .person-tab a.active {
+        border-bottom: 3px solid #fff;
+    }
+    /*内容展示*/
+    
+    .person-tab-content {
+        padding: 0 0.24rem;
+        background: #fff;
+        margin-top: 0.15rem;
+    }
+    
+    .person-tab-list-box {
+        display: none;
+    }
+    
+    .person-tab-list-box.current {
+        display: block;
+    }
+    
+    .person-tab-list li {
+        padding: 0.35rem 0;
+        border-bottom: 1px dashed #dcdcdc;
+    }
+    
+    .person-tab-list li:last-child {
+        border: none;
+    }
+    
+    .person-tab-list-in {
+        width: 100%;
+        font-size: 0.28rem;
+    }
+    
+    .person-item-photo {
+        width: 1.88rem;
+        height: 1.66rem;
+        overflow: hidden;
+        margin-right: 0.15rem;
+    }
+    
+    .person-item-photo img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sc-item-text-t {
+        max-width: 5.2rem;
+        height: 0.5rem
+    }
+    
+    .person-author-info {
+        line-height: 0.6rem;
+        text-align: right;
+        color: #b9b9b9;
+    }
+    
+    .person-author-info>div {
+        display: inline-block;
+        color: #919191;
+        padding-left: 0.1rem;
+        font-size: 0.24rem;
+    }
+    /*图集*/
+    
+    .person-pic-box {
+        margin-left: -0.2rem;
+        margin-right: -0.2rem;
+    }
+    
+    .person-pic-box img {
+        width: 2rem;
+        height: 1.5rem;
+        margin: 0 0.24rem;
+        max-width: 30%;
+    }
+    /*基本资料*/
+    
+    .basic-body {
+        background: #fff;
+    }
+    
+    .basic-info {
+        padding: 0 0.24rem;
+    }
+    
+    .public-header-t {
+        background: #101010;
+    }
+    
+    .header-save {
+        width: 0.88rem;
+        height: 0.88rem;
+        line-height: 0.88rem;
+        text-align: center;
+        color: #fff !important;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 14px;
+
+    }
+    /*头像*/
+    
+    .basic-info-head {
+        padding: 0.4rem 0;
+    }
+    
+    .basic-info-head .basic-info-head-in {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 50%;
+    }
+    
+    .basic-info-head .basic-info-head-in img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .pic-icon {
+        right: 0.1rem;
+        bottom: 0.2rem;
+        width: 0.4rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        text-align: center;
+        background-color: #2c72ac;
+        position: absolute;
+        border-radius: 50%;
+    }
+    
+    .pic-icon i {
+        left: 50%;
+        top: 50%;
+        width: 0.22rem;
+        height: 0.18rem;
+        position: absolute;
+        margin-left: -0.11rem;
+        margin-top: -0.09rem;
+        background: url("../images/center/xiangji.png") center center no-repeat;
+        background-size: contain;
+        -webkit-background-size: contain;
+    }
+    
+    #head-file {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+    }
+    /*基本资料表单*/
+    
+    .basic-info-form .basic-item {
+        line-height: 0.55rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .basic-item-left {
+        padding-right: 0.16rem;
+    }
+    
+    .basic-item-icon {
+        color: #dcdcdc;
+        padding-right: 0.1rem;
+    }
+    
+    .basic-item-icon .iconfont {
+        font-size: 0.36rem;
+    }
+    
+    .basic-nc-inp,
+    .basic-jianjie-inp {
+        border-bottom: 1px solid #568ebd;
+        padding-left: 0.2rem;
+    }
+    
+    .basic-nc-inp input {
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+    /*提示信息*/
+    
+    .tips-box {
+        background-color: #f6f6f6;
+        padding: 0.1rem 0.6rem 0.32rem;
+        border-radius: 5px;
+    }
+    
+    .tips-box p {
+        line-height: 0.4rem;
+        color: #919191;
+    }
+    
+    .tips-box p.dl {
+        line-height: 0.6rem;
+    }
+    
+    .basic-item-sex span {
+        display: inline-block;
+        margin-right: 0.6rem;
+        margin-left: 0.3rem;
+        padding-left: 0.46rem;
+        position: relative;
+    }
+    
+    .basic-item-sex span b {
+        width: 0.3rem;
+        height: 0.3rem;
+        position: absolute;
+        border: 1px solid #3377af;
+        left: 0;
+        top: 50%;
+        margin-top: -0.15rem;
+        border-radius: 50%;
+        transition: all 0.3s;
+    }
+    
+    .basic-item-sex span.active b:before {
+        width: 0.15rem;
+        height: 0.15rem;
+        background: #2c72ac;
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        margin-left: -0.075rem;
+        margin-top: -0.075rem;
+        border-radius: 50%;
+    }
+    /*地址填写*/
+    
+    .adress-form {
+        padding: 0 0.24rem;
+    }
+    
+    .adress-form dl {
+        padding: 0.3rem 0;
+        line-height: 0.68rem;
+    }
+    
+    .adress-form dl dt {
+        width: 1.8rem;
+        font-size: 0.3rem;
+    }
+    
+    .adress-form dl dd input {
+        width: 3.5rem;
+        border: 1px solid #dcdcdc;
+        font-size: 0.24rem;
+        padding-left: 0.1rem;
+    }
+    
+    .adress-form dl dd #xx {
+        width: 100%;
+    }
+
+    /*/我的粉丝*/
+    .person-center-fans{
+        padding:0 0.24rem;
+    }
+    .person-center-fans .fans-list li{
+        padding:0.4rem 0;
+        border-bottom:1px dashed #dcdcdc;
+    }
+    .person-fans-pic{
+        width:1.2rem;
+        height:1.2rem;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        border-radius:50%;
+        overflow: hidden;
+        margin-right:0.2rem;
+    }
+    .person-fans-pic img{
+        width:100%;
+        height:100%;
+    }
+    .person-fans-info-text{
+        max-width:3.5rem;
+        color: #919191;
+        font-size:14px;
+    }
+    .info-name{
+        display: inline-block;
+        position: relative;
+        padding-right:0.5rem;
+    }
+    .info-name-box{
+        max-width:3.5rem;
+        position: relative;
+
+    }
+   .info-name-box .sex-icon,.person-index-info-head .sex-icon{
+        width:20px;
+        height:20px;
+        background: url("../images/nv.png") center center no-repeat;
+       -webkit-background-size:contain;
+       background-size:contain;
+        position: absolute;
+
+        top:50%;
+       right:0;
+        margin-top:-10px;
+    }
+    .person-index-info-head .sex-icon{
+        width:0.2rem;
+        height:0.2rem;
+        background: url("../images/nv.png") center center no-repeat;
+        -webkit-background-size:contain;
+        background-size:contain;
+        position: absolute;
+        margin-left: -0.1rem;
+        top:50%;
+        left:50%;
+        margin-top:-0.1rem;
+    }
+    .info-name-box .sex-icon.sex-nan,.person-index-info-head .sex-icon.sex-nan{
+        background: url("../images/nan.png") center center no-repeat;
+        -webkit-background-size:contain;
+        background-size:contain;
+    }
+    .person-index-info-head .sex-icon-box{
+        width:0.3rem;
+        height: 0.3rem;
+        position: absolute;
+        right:0;
+        bottom:0;
+        background: #fff;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        border-radius:50%;
+    }
+    .info-name-box{
+        line-height:0.6rem;
+    }
+    .fans-list .status-btn{
+        width:1.3rem;
+        height:0.48rem;
+        line-height:0.48rem;
+        text-align: center;
+        -webkit-border-radius:30px;
+        -moz-border-radius:30px;
+        border-radius:30px;
+        border:1px solid #2c72ac;
+        color: #2c72ac;
+        font-size:14px;
+    }
+    .fans-list .status-btn.active{
+        border:1px solid #dcdcdc;
+        background-color:#dcdcdc;
+        color: #919191;
+    }
+    /*我的收藏*/
+
+    .collect-nav{
+        line-height:0.8rem;
+        height:0.8rem;
+        border-bottom:1px solid #dcdcdc;
+    }
+    .collect-nav a{
+        width:33.33%;
+        text-align: center;
+    }
+    .collect-nav a.active{
+        border-bottom:0.04rem solid #2c72ac;
+        color: #2c72ac;
+    }
+
+    .collect-content-box{
+        padding:0 0.24rem;
+    }
+    .collect-content-box ul li{
+        padding-top:0.4rem;
+        border-bottom:1px dashed #dcdcdc;
+    }
+    .collect-content-text{
+        line-height:0.42rem;
+        font-size:14px;
+    }
+    .collect-content-top .collect-content-pic{
+        width:1.88rem;
+        height:1.66rem;
+        overflow: hidden;
+        margin-right:0.2rem;
+    }
+    .collect-content-top .collect-content-pic img{
+        width:100%;
+        height:100%;
+    }
+    .collect-content-data{
+        text-align: right;
+        font-size:13px;
+        line-height:0.6rem;
+        padding:0.08rem 0;
+        color: #919191;
+        position: relative;
+    }
+    .collect-content-data span{
+        display: inline-block;
+        padding:0 0.1rem;
+        color: #919191;
+    }
+    .collect-content-img{
+        margin-right:-0.3rem;
+        padding-top:0.3rem;
+        height:1.6rem;
+        overflow: hidden;
+    }
+.collect-content-img img{
+    width:30%;
+    height:1.5rem;
+    display: block;
+    float: left;
+    margin: 0 0.2rem 0.2rem 0;
+}
+.del-all{
+    position: absolute;
+    right:0.9rem;
+    top:0;
+    height:0.88rem;
+    line-height:0.88rem;
+    color: #2c72ac !important;
+}
+/*作品管理*/
+    .m-del{
+        width:0.66rem;
+        padding:0.08rem 0;
+        line-height:0.6rem;
+        text-align: center;
+        position: absolute;
+        left:0;
+        top:0;
+        color: #919191;
+    }
+    /*关注动态*/
+    .dynamic-box{
+        padding:0 0.24rem;
+    }
+.dynamic-person{
+    padding:0.25rem 0;
+    font-size:15px;
+}
+
+    .dynamic-person .dynamic-person-pic{
+        width:0.5rem;
+        height: 0.5rem;
+        overflow: hidden;
+        margin-right:0.15rem;
+    }
+    .dynamic-person .dynamic-person-pic img{
+        width:100%;
+        height:100%;
+    }
+    .video-content-img,.photo-content-img{
+        padding: 0.22rem 0 0.15rem;
+    }
+    .video-content-img img,.photo-content-img img{
+        width:100%;
+        height: 3.45rem;
+    }
+    .photo-text{
+        font-size: 14px;
+    }
+    /*个人首页*/
+    .person-index{
+        height:4.3rem;
+        width: 100%;
+        background: url("../images/person-index-bg.png") center center no-repeat;
+        -webkit-background-size:cover;
+        background-size:cover;
+    }
+    .person-index-info-head{
+        width: 1.1rem;
+        height:1.1rem;
+        position: relative;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        border-radius:50%;
+        margin:0 auto;
+    }
+    .person-index-info-head img{
+        width:100%;
+        height:100%;
+    }
+    .person-index-name{
+        line-height:0.5rem;
+        margin: 0.1rem 0;
+        color: #fff;
+        text-align: center;
+    }
+    .person-index-data{
+        text-align: center;
+        color: #fff;
+        margin:0.1rem 0;
+    }
+    .person-index-data>a{
+        display: inline-block;
+        color: #fff;
+        line-height:0.36rem;
+        padding:0 0.3rem;
+        font-size: 14px;
+        position: relative;
+    }
+    .person-index-data>a.fans-data:before,.person-index-data>a.att-data:before{
+        content: '';
+        border-right:1px solid #fff;
+        height: 0.3rem;
+        position: absolute;
+        right:-0.05rem;
+        top:50%;
+        margin-top: -0.15rem;
+    }
+    .gz-status .gz-btn{
+        width:1.48rem;
+        height:0.5rem;
+        line-height: 0.5rem;
+        text-align: center;
+        color: #fff;
+        background: rgba(44,114,172,0.8);
+        -webkit-border-radius:5px;
+        -moz-border-radius:5px;
+        border-radius:5px;
+        margin:0.15rem auto;
+        display: none;
+        font-size:14px;
+
+    }
+    .gz-status .gz-btn.ygz{
+        background: rgba(149,149,149,.8);
+        color: #b6b6b6;
+    }
+    .gz-status .gz-btn.active{
+        display: block;
+    }
+
+
+    /*浏览记录*/
+
+    .time-title{
+        font-size:14px;
+        color: #919191;
+        padding:0.32rem 0.24rem 0;
+    }
+    .check-record .check-record-list li{
+        padding: 0 0.24rem;
+    }
+    .check-record .check-record-list li.active{
+        background-color: #f7f7f7;
+    }
+    .check-record .check-record-list li a{
+        padding: 0.4rem 0;
+        border-bottom: 1px solid #dcdcdc;
+    }
+.check-recode-text{
+    font-size:14px;
+    line-height:0.5rem;
+    max-width: 6rem;
+}
+    .check-recode-text h3{
+        font-size: 16px;
+    }
+    .check-recode-text p{
+        color: #919191;
+    }
+.check-record-icon{
+    padding-right:.3rem;
+}
+.check-record-icon-in{
+    width:0.68rem;
+    height: 0.68rem;
+    line-height: 0.68rem;
+    text-align: center;
+    display: block;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    color: #fff;
+
+}
+    .check-record-icon-in.check-record-tuwen{
+        background-color: #2c72ac;
+    }
+    .check-record-icon-in.check-record-tuji{
+        background-color: #ac7d2c;
+    }
+    .check-record-icon-in.check-record-shipin{
+        background-color: #2cac8c;
+    }
+    .check-record-icon-in.check-record-index{
+        background-color: #b7b7b7;
+    }
+    .check-recode-text p span{
+        padding:0 0.3rem 0 0;
+    }
+
+    /*我的消息*/
+    .message-box .message-left{
+        width:0.6rem;
+        padding-right:0.32rem;
+    }
+    .message-box .message-left .message-icon{
+        width: 0.6rem;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        text-align: center;
+        color: #fff;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        border-radius:50%;
+        overflow: hidden;
+        background-color:#2c72ac;
+        display: block;
+    }
+    .message-box .message-left .message-icon img{
+        width:100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    .message-content{
+        font-size:14px;
+        line-height:0.42rem;
+    }
+    .message-time{
+        color: #919191;
+        padding:0.1rem 0;
+        display: block;
+    }
+    .del-message{
+        position: relative;
+        height: 100%;
+        width: 0.4rem;
+        margin-left:0.2rem;
+    }
+    .del-message .del-message-icon{
+        width:0.4rem;
+        height:0.4rem;
+        line-height:0.4rem;
+        text-align: center;
+        display: block;
+        color: #919191;
+    }

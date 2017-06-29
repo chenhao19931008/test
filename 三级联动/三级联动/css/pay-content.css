@@ -1,0 +1,168 @@
+html,body{
+    background-color: #fff;
+}
+.public-header-t{
+    background-color: #303031;
+}
+.pay-content-top{
+    height:2.06rem;
+    background-color: #303031;
+    padding-top:0.6rem;
+}
+.pay-content-top-in{
+    width:1.88rem;
+    height:1.1rem;
+    line-height:0.46rem;
+    background: url("../images/pay-bg.png") no-repeat;
+    -webkit-background-size:contain;
+    background-size:contain;
+    margin:0 auto;
+    text-align: center;
+    padding:0.5rem 0 0;
+    color: #bc761e;
+    font-size:14px;
+}
+.pay-content-top-in .coin-num{
+    font-weight: bold;
+    font-size:18px;
+}
+/*充值金额列表*/
+.pay-number-list{
+    padding:0.3rem 0.15rem 0;
+    margin-right: -0.2rem;
+    background: #fff;
+}
+.pay-number-list li{
+    width:30%;
+    height:1.5rem;
+    border:1px solid #dcdcdc;
+    float: left;
+    text-align: center;
+    margin:0 0.2rem 0.2rem 0;
+    background-color: #fff;
+}
+.pay-number-list li.active{
+    border:1px solid #2c72ac;
+}
+.pay-number-list li .jinbi-num{
+    font-size:20px;
+    padding:0.2rem 0;
+    display: block;
+    font-weight: bold;
+    color: #2c72ac;
+}
+/*温馨提示*/
+.warm-tips{
+    text-align: center;
+    padding:0 0.24rem;
+}
+.warm-tips h2{
+    padding:0.15rem 0 0.2rem;
+    background: url("../images/tips-icon.png") center center no-repeat;
+}
+.warm-tips p{
+    text-align: left;
+    color: #919191;
+    font-size:14px;
+}
+.pay-btn{
+    text-align: center;
+    padding-top:1.5rem;
+}
+.pay-btn button{
+    width:80%;
+    height:1rem;
+    line-height:1rem;
+    text-align: center;
+    color: #fff;
+    font-size:18px;
+    background-color: #2c72ac;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+}
+/*zhifu*/
+.js-pay-type{
+    padding:0 0.24rem;
+}
+.js-pay-type ul li{
+    padding:0.55rem 0;
+    border-bottom:1px solid #dcdcdc;
+}
+.js-pay-type ul li:last-child{
+    border:none;
+}
+.pay-icon{
+    width:0.66rem;
+    height:0.66rem;
+    background: url("../images/pay-type-icon.png") 0 0 no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    margin-right:0.3rem;
+}
+.pay-icon.wx{
+    background-position: 0 -0.76rem;
+}
+.status-checkbox{
+    width:0.7rem;
+    height:0.66rem;
+    position: relative;
+}
+.status-checkbox b{
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    border: 1px solid #3377af;
+    left: 0;
+    top: 50%;
+    margin-top: -0.15rem;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.status-checkbox b.active:before{
+    width: 0.15rem;
+    height: 0.15rem;
+    background: #2c72ac;
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    margin-left: -0.075rem;
+    margin-top: -0.075rem;
+    border-radius: 50%;
+}
+
+/*充值成功*/
+.pay-success-top{
+    text-align: center;
+    margin:0.7rem 0;
+    padding-top:1.4rem;
+    position: relative;
+    font-size:18px;
+}
+.pay-success-top .pay-success-icon{
+    width:1.1rem;
+    height:1.1rem;
+    left:50%;
+    top:0;
+    margin-left:-0.55rem;
+    position: absolute;
+    background: url("../images/success-icon.png") no-repeat;
+    -webkit-background-size:contain;
+    background-size:contain;
+}
+.pay-success-line{
+    text-align: center;
+}
+.pay-success-line a{
+    display: inline-block;
+    width:2.68rem;
+    height:0.73rem;
+    line-height:0.73rem;
+    text-align: center;
+    border:1px solid #dcdcdc;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    margin:0 0.3rem;
+}
